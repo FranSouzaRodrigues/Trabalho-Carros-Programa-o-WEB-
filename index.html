@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locadora de carros</title> 
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="menu-horizontal">
+        <ul id="ul-menu-horizontal">
+            <li><a href="#">Catálogo de Carros</a></li>
+            <li><a href="#">Melhores Marcas</a></li>
+            <li><a href="#">Como Alugar</a></li>
+            <li><a href="#">Dicas</a></li>
+            <li><a href="#">Meus Carros</a></li>
+            <li><a href="#">Entrar</a></li>
+            <li><a href="#">Criar conta</a></li>
+        </ul>
+    </div>
+    <div id="titulo">
+        <h1>Carros – Pesquise, compare e monte sua tabela</h1>
+    </div>
+
+    <div class="slider">
+
+        <img src="imagens/img-2.jpg" alt="Imagens" >
+    
+        <img src="imagens/img-3.jpg" alt="Imagens" >
+    
+        <img src="imagens/img-4.jpg" alt="Imagens" >
+    
+        <img src="imagens/img-5.jpg" alt="Imagens" >
+    
+        <img src="imagens/img-6.jpg" alt="Imagens" >
+
+        <img src="imagens/img-7.jpg" alt="Imagens" >
+    
+      </div>
+      <div class="navigation-button">
+        <span class="dot active" onclick="changeSlide(0)"></span>
+        <span class="dot" onclick="changeSlide(1)"></span>
+        <span class="dot" onclick="changeSlide(2)"></span>
+        <span class="dot" onclick="changeSlide(3)"></span>
+        <span class="dot" onclick="changeSlide(4)"></span>
+      </div>
+
+    </div>
+
+    <div id="tabela">
+    Modelo: <input type="text" id="modelo" placeholder="Ex: Uno, Punto..."><br>
+    Fabricante: <input type="text" id="fabricante" placeholder="Ex: Fiat, Chevrolet..."><br>
+    Ano: <input type="text" id="ano" placeholder="Ex: 1988, 2014"><br>
+    Placa: <input type="text" id="placa" placeholder="Ex: BRA2119, OTM2022"><br>
+    Valor atual: <input type="text" id="valorAtual" placeholder="Ex: 30.000,00"><br>
+    <input type="button" value="Adicionar" id="botaoAdicionar"><br>
+    </div>
+    <br>
+    <div id="informacoes">
+        <table> 
+            <tr><td id="td1">Modelo</td>
+                <td id="td2">Fabricante</td> 
+                <td id="td3">Ano</td> 
+                <td id="td4">Placa</td> 
+                <td id="td5">Valor atual</td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="infromacoesTabela">
+    </div>
+
+    <div id="linha-horizontal">
+    </div>
+    <script src="script.js"></script> </html>
+</body>

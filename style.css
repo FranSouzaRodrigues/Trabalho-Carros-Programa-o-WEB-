@@ -1,0 +1,298 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: aliceblue;
+}
+
+#instrucoes{
+    display: inline;
+}
+
+#ul-menu-horizontal { 
+    list-style-type: none;
+    padding: 0;
+    background-color:rgb(93, 81, 81);
+}
+
+#ul-menu-horizontal li{
+    display: inline;
+    width: 100px;
+}
+
+#ul-menu-horizontal li a{
+    display: inline-block;
+    padding: 30px;
+    text-decoration: none;
+    color: black;
+    transition: background .6s;
+    color: white;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#ul-menu-horizontal li a:hover{
+    background-color: rgb(255, 242, 172);
+    color: black;
+}
+
+#titulo{
+    padding: 30px;
+    background-color: rgb(251, 251, 102);
+    color: rgb(18, 18, 18);
+}
+
+
+.slider {
+    width: 880px;
+    height: 400px;
+    position: relative;
+    transition: all 0,5s;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .slider img {
+    width: 880px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    object-fit: cover;
+  
+  }
+  
+  .slider img:first-child {
+    z-index: 0;
+  }
+  
+  .slider img:nth-child(2) {
+    z-index: 0;
+  }
+  /* botões slider*/
+  
+  
+  .navigation-button {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px; 
+    margin-left: 2px;
+    background-color: #cfcfcf;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+
+  figure {
+    margin-top: 20px;
+    margin-bottom: 90px;
+  }
+  
+  .dot.active,
+  .dot:hover {
+    background-color: #f0cd4f;
+  }
+  h1 {
+    font-weight: bolder;
+  }
+  .titulo-horizontal {
+    text-align: left;
+  }
+  .titulo-horizontal2 {
+    text-align: left;
+  }
+
+
+#img-1{
+    width: 780px;
+}
+
+#img-2{
+    width: 780px;
+}
+
+#img-3{
+    width: 780px;
+}
+
+#img-4{
+    width: 780px;
+}
+
+#img-5{
+    width: 780px;
+}
+
+#img-6{
+    width: 780px;
+}
+
+#img-7{
+    width: 780px;
+}
+
+.manual-navegation{
+    position: absolute;
+    width: 800px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #FFF;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: -150px;
+}
+
+.manual-btn:hover{
+    background-color: white;
+}
+
+#radio1:checked ~ .first{
+    margin-left:0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+#radio5:checked ~ .first{
+    margin-left: -100%;
+}
+
+#radio6:checked ~ .first{
+    margin-left: -125%;
+}
+
+#radio7:checked ~ .first{
+    margin-left: -150%;
+}
+
+#tabela{
+    text-align: center;
+    margin-right: 100px;
+    background-color:rgb(235, 219, 97);
+    margin-left: 450px;
+    margin-top: 30px;
+    height: 150px;
+    width: 400px;
+    border-radius: 20px;
+}
+
+
+#modelo{
+    margin-top: 10px;
+    text-align: center;
+    border-width: 0;
+}
+
+#fabricante{
+    margin-top: 3px;
+    text-align: center;
+    border-width: 0;
+}
+
+#ano{
+    margin-top: 3px;
+    text-align: center;
+    border-width: 0;
+}
+
+#placa{
+    margin-top: 3px;
+    text-align: center;
+    border-width: 0;
+}
+
+#valorAtual{
+    margin-top: 3px;
+    text-align: center;
+    border-width: 0;
+}
+
+#botaoAdicionar{
+    border-width: 0;
+    border-radius: 20px;
+    margin-top: 5px;
+    border-color: rgb(213, 249, 255);
+    width: 80px;;
+    height: 20px;
+    text-align: center;
+    margin-left: 50px;
+    background-color: rgb(213, 249, 255);
+    cursor: pointer;
+}
+
+#botaoAdicionar:hover{
+    background-color: rgb(137, 237, 254);
+}
+
+#informacoes table{
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 150px;
+    margin-right: 400px;
+    width: 1000px;
+}
+
+#informacoes td{
+    background-color: rgb(65, 176, 255);
+    border: 1px solid rgb(65, 176, 255);
+    padding: 15px;
+    text-align: center;
+    max-width: 9px;
+    min-width: 9px;
+}
+
+#infromacoesTabela table{
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 0px;
+    margin-left: 400px;
+    margin-left: 150px;
+    margin-right: 400px;
+    width: 1000px;
+}
+
+#infromacoesTabela tr, td {
+    background-color: rgb(174, 221, 254);
+    border: 1px solid rgb(174, 221, 254);
+    padding: 15px;
+    text-align: center;
+    max-width: 9px;
+    min-width: 9px;
+}
+
+#linha-horizontal{
+    margin-top: 30px;
+    height: 100px;
+    background-color: (253, 247, 233);
+}
